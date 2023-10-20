@@ -66,34 +66,34 @@ public class latihan220 {
         switch (jenis_buku) {
             case 1:
                 diskon = 0.1;
+                System.out.println("Anda mendapatkan diskon :" + diskon);
                 if (jml_buku > 2) {
                     diskon += 0.02;
+                    System.out.println("Anda mendapatkan diskon : " +diskon);
                 }
                 break;
             case 2:
                 diskon = 0.07;
                 if (jml_buku > 3) {
                     diskon += 0.02;
+                    System.out.println("Anda mendapatkan diskon :" + diskon);
                 } else {
                     diskon += 0.01;
+                    System.out.println("Anda mendapatkan diskon :" + diskon);
                 }
                 break;
             case 3:
-                diskon = 0.05;
+                diskon = 0;
                 if (jml_buku > 3) {
                     diskon += 0.05;
+                } else {
+                    System.out.println("Anda tidak mendapatkan diskon");
                 }
                 break;
             default:
                 System.out.println("Input yang anda masukkan salah");
                 return;
         }
-
-        // 
-        System.out.println("Anda mendapatkan diskon : " + diskon);
-    
-
-
 
     }
 }
